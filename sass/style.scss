@@ -1,0 +1,36 @@
+@mixin flex-center(){
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+$logo-color: #FFFFFF;
+
+body{
+    background-color:#eee;
+    margin:0;
+}
+
+#start{
+    width:100vw;
+    height:100vh;
+    background-image:url('../img/starter1.png');
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    @include flex-center;
+}
+
+.startwrapper{
+    @include flex-center;
+    width:300px;
+    height:300px;
+}
+
+.startlogo{
+    position:relative;
+    color: $logo-color;
+    font-family: 'Raleway', sans-serif;
+    font-size:10rem;
+    margin-left:2400px;
+    opacity: 0;
+}
