@@ -7,7 +7,7 @@
 $font-family: 'Raleway', sans-serif;
 $logo-color: #FFFFFF;
 
-body{
+body {
     background-color:#eee;
     margin:0;
 }
@@ -22,7 +22,7 @@ body{
     transition: all 0.4s ease;
 }
 
-.nav-ul{
+.nav-ul {
     display:flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -30,7 +30,7 @@ body{
     list-style-type: none;
 }
 
-.menu-item{
+.menu-item {
     text-decoration:none;
     font-family: $font-family;
     font-size:1.5rem;
@@ -41,13 +41,13 @@ body{
 
 // main img 
 
-.startwrapper{
+.startwrapper {
     @include flex-center;
     width:300px;
     height:300px;
 }
 
-#start{
+#start {
     width:100vw;
     height:100vh;
     background-image:url('../img/starter1.png');
@@ -56,7 +56,7 @@ body{
     @include flex-center;
 }
 
-.startlogo{
+.startlogo {
     position:relative;
     color: $logo-color;
     font-family: $font-family;
@@ -68,34 +68,34 @@ body{
 
 // info section
 
-#info{
+#info {
     width:100%;
     height:100%;
 }
 
-.info-wrapper{
+.info-wrapper {
     @include flex-center;
     flex-direction:column;
 }
 
-.info{
+.info {
     width:60rem;
-    height:20rem;
+    height:15rem;
     @include flex-center;
 }
 
-.info-text{
+.info-text {
     font-family: $font-family;
     color:#000000;
     font-size:2rem;
     text-align:center;
 }
 
-.none{
+.hidden {
     display:none;
 }
 
-.info-logo{
+.info-logo {
     width:40rem;
     height:5rem;
     display:flex;
@@ -103,9 +103,7 @@ body{
     justify-content: space-between;
 }
 
-
-
-.appstore{
+.appstore {
     width:17rem;
     height:5rem;
     background-image:url("../img/appstorelogo.png");
@@ -113,7 +111,7 @@ body{
     background-size:100% 100%;
 }
 
-.googleplay{
+.googleplay {
     width:17rem;
     height:5rem;
     background-image:url("../img/googleplay.png");
@@ -121,9 +119,39 @@ body{
     background-size:100% 100%;
 }
 
-/// yaya 
+/// teasers 
 
-#yaya{
-    height:100rem;
+#teasers {
+    margin-top:5rem;
+    height:100%;
     width:100%;
+    @include flex-center;
+}
+
+.imagewrapper {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height:100%;
+    width:60rem;
+}
+
+.imageparent {
+    width: 25rem;
+    height: 40rem;
+    overflow: hidden;
+}
+
+.imageparent:hover .imagecard,
+.imageparent:focus .imagecard {
+    transform: scale(2); 
+}
+
+.imagecard {
+    width: 25rem;
+    height: 40rem;
+    background-image:url("../img/picture1.png");
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    transition: ease 5s;
 }

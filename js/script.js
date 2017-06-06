@@ -6,25 +6,25 @@ $(document).ready(function() {
 
     $(window).scroll(function(){
         if($(window).scrollTop()>100)
-            $(".nav-menu").css({"background-color" : "rgba(0,0,0,.5)"});
+            $('.nav-menu').css({'background-color' : 'rgba(0,0,0,.5)'});
         else 
-            $(".nav-menu").css({"background-color" : "rgba(0,0,0,0)"});
+            $('.nav-menu').css({'background-color' : 'rgba(0,0,0,0)'});
             
     });
    
     $(window).scroll(function(){
         if($(window).scrollTop()>100)
-            $(".menu-item").css({"color" : "#FFFFFF"});
+            $('.menu-item').css({'color' : '#FFFFFF'});
         else 
-            $(".menu-item").css({"color" : "#000000"});
+            $('.menu-item').css({'color' : '#000000'});
             
     });
 
     $(window).scroll(function(){
-        if($(window).scrollTop()>500)
-            $(".info-logo").fadeIn("slow");
+        if($(window).scrollTop()>450)
+            $('.storelogo').fadeIn('slow');
         else
-            $(".info-logo").fadeOut("slow");
-    });
+            $('.storelogo').fadeOut('slow');
+    });  
 
 });

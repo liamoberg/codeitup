@@ -61,7 +61,7 @@ body {
 
 .info {
   width: 60rem;
-  height: 20rem;
+  height: 15rem;
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -72,7 +72,7 @@ body {
   font-size: 2rem;
   text-align: center; }
 
-.none {
+.hidden {
   display: none; }
 
 .info-logo {
@@ -96,8 +96,36 @@ body {
   background-repeat: no-repeat;
   background-size: 100% 100%; }
 
-#yaya {
-  height: 100rem;
-  width: 100%; }
+#teasers {
+  margin-top: 5rem;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.imagewrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100%;
+  width: 60rem; }
+
+.imageparent {
+  width: 25rem;
+  height: 40rem;
+  overflow: hidden; }
+
+.imageparent:hover .imagecard,
+.imageparent:focus .imagecard {
+  transform: scale(2); }
+
+.imagecard {
+  width: 25rem;
+  height: 40rem;
+  background-image: url("../img/picture1.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  transition: ease 5s; }
 
 /*# sourceMappingURL=style.css.map */
