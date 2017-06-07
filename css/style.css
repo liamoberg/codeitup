@@ -18,7 +18,7 @@ body {
 
 .menu-item {
   text-decoration: none;
-  font-family: "Raleway", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 1.5rem;
   margin-right: 0.5rem;
   margin-left: 0.5rem;
@@ -67,7 +67,7 @@ body {
   align-items: center; }
 
 .info-text {
-  font-family: "Raleway", sans-serif;
+  font-family: "Lato", sans-serif;
   color: #000000;
   font-size: 2rem;
   text-align: center; }
@@ -148,10 +148,66 @@ body {
   display: block; }
 
 span {
-  color: white;
-  /* Good thing we set a fallback color! */
-  font-family: "Raleway", sans-serif;
+  color: #FFFFFF;
+  font-family: "Lato", sans-serif;
   font-size: 1.5rem;
   z-index: 1; }
+
+footer {
+  margin-top: 5rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #000000;
+  background-color: #FFFFFF; }
+
+.footer-logo {
+  height: 100%;
+  width: 60%;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  margin-right: 1rem; }
+
+.contact {
+  height: 100%;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem; }
+
+.contact-logo {
+  color: #000000;
+  font-family: "Raleway", sans-serif; }
+
+.contact-info {
+  color: #000000;
+  font-family: "Lato", sans-serif;
+  font-size: 1rem; }
+
+.mini-logowrapper {
+  display: flex;
+  flex-direction: row; }
+
+.mini-logo {
+  width: 40px;
+  height: 40px;
+  margin: 0.2rem; }
+
+.insta {
+  background-image: url("../img/insta.png");
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.face {
+  background-image: url("../img/facebook.png");
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.git {
+  background-image: url("../img/github.png");
+  background-size: cover;
+  background-repeat: no-repeat; }
 
 /*# sourceMappingURL=style.css.map */
