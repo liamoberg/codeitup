@@ -2,7 +2,7 @@ $(document).ready(function() {
     $('.startlogo').animate({
             left: '-600px',
             opacity: 1
-    }, 1500);
+    }, 1500);  
 
     $(window).scroll(function(){
         if($(window).scrollTop()>100)
@@ -21,10 +21,10 @@ $(document).ready(function() {
     });
 
     $(window).scroll(function(){
-        if($(window).scrollTop()>450)
+        if($(window).scrollTop()>370)
             $('.storelogo').fadeIn('slow');
         else
             $('.storelogo').fadeOut('slow');
-    });  
+    });
 
 });
