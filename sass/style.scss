@@ -189,25 +189,15 @@ footer {
     height:100%;
     display:flex;
     flex-direction: row;
-    border:1px solid #000000;
-    background-color:#FFFFFF;
 }
 
 .footer-logo {
     height:100%;
-    width:60%;
+    width:100%;
     display:flex;
-    align-items:flex-end;
+    align-items:center;
     flex-direction: column;
     margin-right:1rem;
-}
-
-.contact {
-    height:100%;
-    width:20%;
-    display:flex;
-    flex-direction:column;
-    margin-left:1rem;
 }
 
 .contact-logo {
@@ -215,11 +205,6 @@ footer {
     font-family: $font-family;
 }
 
-.contact-info {
-    color:#000000;
-    font-family: $breadtext;
-    font-size:1rem;
-}
 
 .mini-logowrapper{
     display:flex;
@@ -251,6 +236,179 @@ footer {
 }
 
 
+
+@media only screen and (max-width: 500px) {
+
+    // nav
+.nav-menu {
+    width:100%;
+    height:3.5rem;
+    position:fixed;
+    z-index:1;
+    transition: all 0.4s linear;
+}
+
+.nav-ul {
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items:center;
+    list-style-type: none;
+}
+
+.menu-item {
+    text-decoration:none;
+    font-family: $breadtext;
+    font-size:1rem;
+    margin-right:0.5rem;
+    margin-left:0.5rem;
+    color:#000000;
+}
+
+//main
+
+.startwrapper {
+    @include flex-center;
+}
+
+#start {
+    width:100vw;
+    height:70vh;
+    background-image:url('../img/starter1.png');
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    @include flex-center;
+}
+
+.startlogo {
+    position:relative;
+    color: $logo-color;
+    font-family: $font-family;
+    font-size:3rem;
+    margin-left:1200px;
+    opacity: 0;
+}
+
+//info section
+
+#info {
+    width:100%;
+    height:100%;
+}
+
+.info-wrapper {
+    @include flex-center;
+    flex-direction:column;
+}
+
+.info {
+    width:100%;
+    height:15rem;
+    @include flex-center;
+}
+
+.info-text {
+    font-family: $breadtext;
+    color:#000000;
+    font-size:1.5rem;
+    text-align:center;
+}
+
+.hidden {
+    display:none;
+}
+
+.info-logo {
+    width:22rem;
+    height:3rem;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+
+.appstore {
+    width:10rem;
+    height:3rem;
+    background-image:url("../img/appstorelogo.png");
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+}
+
+.googleplay {
+    width:10rem;
+    height:3rem;
+    background-image:url("../img/googleplay.png");
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+}
+
+
+//teasers section
+
+#teasers {
+    margin-top:5rem;
+    height:100%;
+    width:100%;
+    @include flex-center;
+}
+
+.imagewrapper{
+    width: 95%;
+    height:30rem;
+    flex-direction: column;
+    @include flex-center;
+}
+
+.imageparent {
+    width:100%;
+    height:30rem;
+    overflow: hidden;
+}
+
+.imagecard {
+    @include flex-center;
+    flex-direction:column;
+    width:100%;
+    height:100%;
+    background-image:url("../img/workstation.png");
+    background-size:cover;
+    background-position: center;
+    transition: all 1.5s ease;
+}
+
+.imagecard:before {
+    content: "";
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.imageparent:hover .imagecard,
+.imageparent:focus .imagecard{
+    transform:scale(1.2);
+}
+
+.imageparent:hover .imagecard:before,
+.imageparent:focus .imagecard:before {
+    display: block;
+}
+
+span {
+  color: #FFFFFF;
+  font-family: $breadtext;
+  font-size:1.5rem;
+  z-index:1;
+}
+
+
+
+
+
+}
 
 
 
