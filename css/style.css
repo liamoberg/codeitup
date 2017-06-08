@@ -35,6 +35,9 @@ ul {
   margin-left: 0.5rem;
   color: #000000; }
 
+.menu-item:hover {
+  color: #DC143C !important; }
+
 .startwrapper {
   display: flex;
   justify-content: center;
@@ -116,7 +119,7 @@ ul {
   align-items: center; }
 
 .imagewrapper {
-  width: 95%;
+  width: 100%;
   height: 30rem;
   flex-direction: column;
   display: flex;
@@ -176,8 +179,7 @@ footer {
   width: 100%;
   display: flex;
   align-items: center;
-  flex-direction: column;
-  margin-right: 1rem; }
+  flex-direction: column; }
 
 .contact-logo {
   color: #000000;
