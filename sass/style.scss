@@ -299,38 +299,22 @@ footer {
 }
 
 .info-text {
-    font-family: $breadtext;
-    color:#000000;
     font-size:1.5rem;
-    text-align:center;
-}
-
-.hidden {
-    display:none;
 }
 
 .info-logo {
     width:22rem;
     height:3rem;
-    display:flex;
-    flex-direction:row;
-    justify-content: space-between;
 }
 
 .appstore {
     width:10rem;
     height:3rem;
-    background-image:url("../img/appstorelogo.png");
-    background-repeat:no-repeat;
-    background-size:100% 100%;
 }
 
 .googleplay {
     width:10rem;
     height:3rem;
-    background-image:url("../img/googleplay.png");
-    background-repeat:no-repeat;
-    background-size:100% 100%;
 }
 
 
