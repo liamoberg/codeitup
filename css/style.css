@@ -10,8 +10,13 @@ ul {
   height: 4rem;
   position: fixed;
   z-index: 1;
+  -webkit-transition: all 0.4s linear;
   transition: all 0.4s linear;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center; }
 
 .nav-logo {
@@ -24,8 +29,15 @@ ul {
 
 .nav-ul {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
   justify-content: flex-end;
   list-style-type: none; }
 
@@ -41,8 +53,14 @@ ul {
   color: #DC143C !important; }
 
 .startwrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   width: 300px;
   height: 300px; }
@@ -53,8 +71,14 @@ ul {
   background-image: url("../img/starter1.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center; }
 
 .startlogo {
@@ -70,16 +94,31 @@ ul {
   height: 100%; }
 
 .info-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column; }
 
 .info {
   width: 60rem;
   height: 15rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center; }
 
 .info-text {
@@ -94,8 +133,15 @@ ul {
 .info-logo {
   width: 40rem;
   height: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between; }
 
 .appstore {
@@ -116,16 +162,31 @@ ul {
   margin-top: 5rem;
   height: 100%;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center; }
 
 .imagewrapper {
   width: 100%;
   height: 30rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center; }
 
 .imageparent {
@@ -134,15 +195,25 @@ ul {
   overflow: hidden; }
 
 .imagecard {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   width: 100%;
   height: 100%;
   background-image: url("../img/workstation.png");
   background-size: cover;
   background-position: center;
+  -webkit-transition: all 1.5s ease;
   transition: all 1.5s ease; }
 
 .imagecard:before {
@@ -157,6 +228,7 @@ ul {
 
 .imageparent:hover .imagecard,
 .imageparent:focus .imagecard {
+  -webkit-transform: scale(1.2);
   transform: scale(1.2); }
 
 .imageparent:hover .imagecard:before,
@@ -175,14 +247,26 @@ footer {
   margin-top: 5rem;
   width: 100%;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row; }
 
 .footer-logo {
   height: 100%;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column; }
 
 .contact-logo {
@@ -191,7 +275,12 @@ footer {
   font-weight: bold; }
 
 .mini-logowrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
   margin-bottom: 1rem; }
 
@@ -224,6 +313,7 @@ footer {
   .nav-menu {
     width: 100%;
     height: 3.5rem;
+    -webkit-transition: all 0.4s linear;
     transition: all 0.4s linear; }
 
   .menu-item {
@@ -233,8 +323,14 @@ footer {
     font-size: 1rem; }
 
   .startwrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center; }
 
   #start {
@@ -247,8 +343,14 @@ footer {
   .info {
     width: 100%;
     height: 15rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center; }
 
   .info-text {
