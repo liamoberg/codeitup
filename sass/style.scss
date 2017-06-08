@@ -21,13 +21,22 @@ body {
     position:fixed;
     z-index:1;
     transition: all 0.4s linear;
+    display:flex;
+    justify-content: flex-end;
+}
+
+#menu-logo {
+    font-family: $font-family;
+    color:#000000;
+    font-weight:bold;
+    margin-right:54rem;
 }
 
 .nav-ul {
+    width:100%;
     display:flex;
     flex-direction: row;
     justify-content: flex-end;
-    align-items:center;
     list-style-type: none;
 }
 
@@ -35,7 +44,7 @@ body {
     text-decoration:none;
     font-family: $breadtext;
     font-size:1.5rem;
-    margin-right:0.5rem;
+    margin-right:1rem;
     margin-left:0.5rem;
     color:#000000;
 }
@@ -203,12 +212,14 @@ footer {
 .contact-logo {
     color:#000000;
     font-family: $font-family;
+    font-weight:bold;
 }
 
 
 .mini-logowrapper{
     display:flex;
     flex-direction:row;
+    margin-bottom:1rem;
 }
 
 .mini-logo {
@@ -235,6 +246,12 @@ footer {
     background-repeat: no-repeat;
 }
 
+.twitter {
+    background-image:url("../img/twitter.png");
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+
 
 
 @media only screen and (max-width: 500px) {
@@ -243,26 +260,12 @@ footer {
 .nav-menu {
     width:100%;
     height:3.5rem;
-    position:fixed;
-    z-index:1;
     transition: all 0.4s linear;
 }
 
-.nav-ul {
-    display:flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items:center;
-    list-style-type: none;
-}
 
 .menu-item {
-    text-decoration:none;
-    font-family: $breadtext;
     font-size:1rem;
-    margin-right:0.5rem;
-    margin-left:0.5rem;
-    color:#000000;
 }
 
 //main
@@ -272,34 +275,15 @@ footer {
 }
 
 #start {
-    width:100vw;
-    height:70vh;
-    background-image:url('../img/starter1.png');
-    background-repeat:no-repeat;
-    background-size:100% 100%;
-    @include flex-center;
+    height:50vh;
+    width: 100%;
 }
 
 .startlogo {
-    position:relative;
-    color: $logo-color;
-    font-family: $font-family;
     font-size:3rem;
-    margin-left:1200px;
-    opacity: 0;
 }
 
 //info section
-
-#info {
-    width:100%;
-    height:100%;
-}
-
-.info-wrapper {
-    @include flex-center;
-    flex-direction:column;
-}
 
 .info {
     width:100%;
@@ -345,63 +329,8 @@ footer {
 
 //teasers section
 
-#teasers {
-    margin-top:5rem;
-    height:100%;
-    width:100%;
-    @include flex-center;
-}
-
-.imagewrapper{
-    width: 95%;
-    height:30rem;
-    flex-direction: column;
-    @include flex-center;
-}
-
-.imageparent {
-    width:100%;
-    height:30rem;
-    overflow: hidden;
-}
-
-.imagecard {
-    @include flex-center;
-    flex-direction:column;
-    width:100%;
-    height:100%;
-    background-image:url("../img/workstation.png");
-    background-size:cover;
-    background-position: center;
-    transition: all 1.5s ease;
-}
-
-.imagecard:before {
-    content: "";
-    display: none;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.75);
-}
-
-.imageparent:hover .imagecard,
-.imageparent:focus .imagecard{
-    transform:scale(1.2);
-}
-
-.imageparent:hover .imagecard:before,
-.imageparent:focus .imagecard:before {
-    display: block;
-}
-
 span {
-  color: #FFFFFF;
-  font-family: $breadtext;
-  font-size:1.5rem;
-  z-index:1;
+    text-align: center;
 }
 
 
