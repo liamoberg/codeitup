@@ -167,7 +167,9 @@ span {
   color: #FFFFFF;
   font-family: "Lato", sans-serif;
   font-size: 1.5rem;
-  z-index: 1; }
+  z-index: 1;
+  text-align: center;
+  width: 60%; }
 
 footer {
   margin-top: 5rem;
@@ -227,6 +229,9 @@ footer {
   .menu-item {
     font-size: 1rem; }
 
+  .nav-logo {
+    font-size: 1rem; }
+
   .startwrapper {
     display: flex;
     justify-content: center;
@@ -262,6 +267,7 @@ footer {
     height: 3rem; }
 
   span {
-    text-align: center; } }
+    text-align: center;
+    width: 80%; } }
 
 /*# sourceMappingURL=style.css.map */
