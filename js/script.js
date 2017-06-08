@@ -23,8 +23,6 @@ $(document).ready(function() {
     $(window).scroll(function(){
         if($(window).scrollTop()>340)
             $('.storelogo').fadeIn('slow');
-        else
-            $('.storelogo').fadeOut('slow');
     });
 
     $( ".twitter" ).hover(
