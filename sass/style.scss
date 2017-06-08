@@ -26,14 +26,16 @@ ul {
     z-index:1;
     transition: all 0.4s linear;
     display:flex;
-    justify-content: flex-end;
+    align-items:center;
 }
 
-#menu-logo {
+.nav-logo {
     font-family: $font-family;
     color:#000000;
     font-weight:bold;
-    margin-right:54rem;
+    margin-left:1rem;
+    font-size:1.5rem;
+    text-decoration: none;
 }
 
 .nav-ul {

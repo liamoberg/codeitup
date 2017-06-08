@@ -1,8 +1,15 @@
-$(document).ready(function() {
+var img = new Image();
+img.src = 'img/starter1.png';
+
+img.onload = function (){
     $('.startlogo').animate({
             left: '-600px',
             opacity: 1
-    }, 1500);  
+    }, 1500); 
+}
+
+
+$(document).ready(function() {
 
     $(window).scroll(function(){
         if($(window).scrollTop()>100)
@@ -17,6 +24,14 @@ $(document).ready(function() {
             $('.menu-item').css({'color' : '#FFFFFF'});
         else 
             $('.menu-item').css({'color' : '#000000'});
+            
+    });
+
+    $(window).scroll(function(){
+        if($(window).scrollTop()>100)
+            $('.nav-logo').css({'color' : '#FFFFFF'});
+        else 
+            $('.nav-logo').css({'color' : '#000000'});
             
     });
 
