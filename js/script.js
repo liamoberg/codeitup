@@ -11,32 +11,39 @@ $(document).ready(function() {
     }
 
     $(window).scroll(function(){
-        if($(window).scrollTop()>100)
+        if($(window).scrollTop()>100){
             $('.nav-menu').css({'background-color' : 'rgba(0,0,0,.5)'});
-        else 
+        }
+        else {
             $('.nav-menu').css({'background-color' : 'rgba(0,0,0,0)'});
+        }
             
     });
    
     $(window).scroll(function(){
-        if($(window).scrollTop()>100)
+        if($(window).scrollTop()>100){
             $('.menu-item').css({'color' : '#FFFFFF'});
-        else 
+        }
+        else {
             $('.menu-item').css({'color' : '#000000'});
+        }
             
     });
 
     $(window).scroll(function(){
-        if($(window).scrollTop()>100)
+        if($(window).scrollTop()>100){
             $('.nav-logo').css({'color' : '#FFFFFF'});
-        else 
+        }
+        else {
             $('.nav-logo').css({'color' : '#000000'});
+        }
             
     });
 
     $(window).scroll(function(){
-        ($(window).scrollTop()>340)
+        if($(window).scrollTop()>350){
             $('.storelogo').fadeIn('slow');
+        }
     });
 
     $( ".twitter" ).hover(
