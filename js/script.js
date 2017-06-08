@@ -27,4 +27,36 @@ $(document).ready(function() {
             $('.storelogo').fadeOut('slow');
     });
 
+    $( ".twitter" ).hover(
+        function() {
+            $( this ).css({"opacity" : "0.5"});
+        }, function() {
+            $( this ).css({"opacity" : "1"});
+        }
+    );
+
+    $( ".face" ).hover(
+        function() {
+            $( this ).css({"opacity" : "0.5"});
+        }, function() {
+            $( this ).css({"opacity" : "1"});
+        }
+    );
+
+    $( ".insta" ).hover(
+        function() {
+            $( this ).css({"opacity" : "0.5"});
+        }, function() {
+            $( this ).css({"opacity" : "1"});
+        }
+    );
+
+    $( ".git" ).hover(
+        function() {
+            $( this ).css({"opacity" : "0.5"});
+        }, function() {
+            $( this ).css({"opacity" : "1"});
+        }
+    );
+
 });
