@@ -198,6 +198,8 @@ span {
   font-family: $breadtext;
   font-size:1.5rem;
   z-index:1;
+  text-align:center;
+  width:60%;
 }
 
 //footer
@@ -277,6 +279,11 @@ footer {
     font-size:1rem;
 }
 
+.nav-logo {
+    font-size:1rem;
+    
+}
+
 //main
 
 .startwrapper {
@@ -319,13 +326,10 @@ footer {
     height:3rem;
 }
 
-
-//teasers section
-
 span {
     text-align: center;
+    width:80%;
 }
-
 
 
 
